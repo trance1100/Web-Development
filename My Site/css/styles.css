@@ -1,0 +1,151 @@
+body {
+    background-color: #f2f6f5;
+    font-family: 'Manjari', sans-serif;
+    margin: 0;
+}
+
+h3 {
+    color: #11999E;
+}
+
+h2 {
+    color: #11999E;
+}
+a {
+    color: #11999E;
+}
+
+.profile {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.info {
+    margin: 40px;
+}
+
+
+.title {
+    color: #93b5b3;
+    margin: 15px;
+    padding: 5px;
+    size: 2.5rem;
+    font-weight: normal; 
+    line-height: 2;
+}
+
+.contact {
+    color: #93b5b3;
+    margin: 0;
+    margin: 10px;
+}
+
+.link {
+    color: #63707e;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #93b5b3;
+}
+
+.mountain {
+    height: 40%;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+}
+
+.top-cloud {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+}
+
+.middle-cloud {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+
+.proj {
+    text-align: center;
+    margin: 0;
+    bottom: 0px;
+}
+
+.main {
+    text-align: center;
+    margin: 10px auto 10px auto;
+    height: 720px;
+    position: relative;
+    color: #63707e;
+    padding: 5px;
+}
+
+.face {
+    width: 25%;
+}
+.pic {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.pic-two {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.middle-container {
+    text-align: center;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.dots {
+    border-style: dotted none none none;
+    width: 3rem;
+    border-width: 0.5rem;
+    border-color: grey;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 10px 50px 10px 50px;
+    background-color: #11999E;
+    color: white;
+}
+.bottom-container {
+    background-color: #66BFBF;
+    height: 7.5rem;
+    text-align: center;
+    padding: 13px;
+    line-height: 2;
+}
+
+.contact-me {
+    margin: 35px;
+}
+
+#name {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #93b5b3;
+    margin: 10px;
+    padding: 5px;
+    font-size: 5.625em;
+    line-height: 2;
+}
