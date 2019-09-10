@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+
+  <!-- Bootstrap & Jquery link -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -14,67 +16,88 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <title>TinDog</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Font awesome script -->
+  <script src="https://kit.fontawesome.com/6c1a6475ff.js"></script>
+
+  <!-- Stylesheet reference -->
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet"> 
+
+  <title>TinDog</title>
+
 </head>
 
 <body>
 
   <section id="title" style="background-color: #FF4C68">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="" class="navbar-brand logo"> <strong> tindog</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+          <ul class="navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a href="" class="navbar-brand">Tindog</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-        <ul class="navbar-nav">
-          <li>
-            <a class="nav-link" href="">Contact</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Contact</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
 
+      <!-- Title -->
 
-    <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="text"><strong>Meet new and interesting dogs nearby.</strong></h1>
+          <button type="button" class="btn btn-dark btn-lg download"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download"><i class="fab fa-google-play"></i>
+            Download</button>
+        </div>
 
-    <div class="row">
-      <div class="co-lg-6 col-md-6 heading">
-        <h1>Meet new and interesting dogs nearby.</h1>
-        <button type="button">Download</button>
-        <button type="button">Download</button>
-      </div>
-      <div class="col-lg-6 col-md-6">
-        <img src="images/iphone6.png" alt="iphone-mockup">
+        <div class="col-lg-6">
+          <img src="images/iphone6.png" alt="iphone-mockup" class="phone">
+        </div>
       </div>
     </div>
-
   </section>
 
 
   <!-- Features -->
 
   <section id="features">
-
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your dog could do it.</p>
-
-    <h3>Elite Clientele</h3>
-    <p>We have all the dogs, the greatest dogs.</p>
-
-    <h3>Guaranteed to work.</h3>
-    <p>Find the love of your dog's life or your money back.</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 points">
+          <i class="far fa-check-circle circle icon"></i>
+          <h3 class="feature-desc">Easy to use.</h3>
+          <p class="feature">So easy to use, even your dog could do it.</p>
+        </div>
+        <div class="col-lg-4 points">
+          <i class="fas fa-bullseye icon"></i>
+          <h3 class="feature-desc">Elite Clientele</h3>
+          <p class="feature">We have all the dogs, the greatest dogs.</p>
+        </div>
+        <div class="col-lg-4 points">
+          <i class="far fa-heart icon"></i>
+          <h3 class="feature-desc">Guaranteed to work.</h3>
+          <p class="feature">Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+    </div>
 
   </section>
 
