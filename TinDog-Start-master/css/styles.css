@@ -2,12 +2,19 @@ body {
     font-family: 'Montserrat-Black', sans-serif;
 }
 
+h2 {
+    font-family: 'Montseratt-Black';
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
 #title {
     color: #fff;
+    background-color: #FF4C68;
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 20%;
 }
 
 .navbar {
@@ -36,6 +43,7 @@ body {
 .phone {
     transform: rotate(20deg);
     width: 60%;
+    position: absolute;
 }
 
 .icon {
@@ -53,10 +61,49 @@ body {
     padding: 80px;
 }
 
+.features {
+    padding: 7% 15%;
+
+}
 .feature-desc {
     font-weight: bold;
 }
+.test-img {
+    width: 10%;
+    border-radius: 100%;
+}
+#testimonials {
+    background-color: #FF4C68;
+    text-align: center;
+    color: #fff;
+}
 
-.feature {
-    
+#press {
+    background-color: #FF4C68;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+#features {
+    padding: 7% 15%;
+    position: relative;
+    z-index: 1;
 }
