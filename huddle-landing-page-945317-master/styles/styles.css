@@ -1,33 +1,69 @@
 body {
     margin: 0;
 }
-.top{
-    height: 1000px;
+
+.row-top {
+    margin-bottom: 50px;
+    height: 700px;
+    background-image: url("/huddle-landing-page-945317-master/images/bg-hero-desktop.svg");
+}
+.menu {
+    text-align: left;
+    size: 87.5em;
+    margin: 0;
+    padding: 15px;
 }
 .navigation-bar {
     list-style-type: none;
-    margin: 50px;
-    padding: 50px;
-    text-align: center;
+    padding: 15px;
 }
 
 .navigation-item {
-    float: left;
+    display: inline;
 }
 
 .logo {
-    margin-right: 1400px;
+    margin-right: 70%;
 }
 
-.top {
-    background-image: url("/huddle-landing-page-945317-master/images/bg-hero-desktop.svg")
+.try {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 0;
+    line-height: 2.5;
+    padding: 5px 50px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+    
+}
+
+.try:hover {
+    background-color: rgb(232, 232, 243);
+}
+
+.start {
+    text-align: center;
+    background-color: rgb(255, 0, 191);
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    line-height: 2.5;
+    padding: 5px 50px;
+}
+
+.start:hover {
+    background-color: rgb(230, 42, 198);
+}
+
+.column {
+    size: 50%;
+    float: left;
+    padding: 10px;
+    margin: 15px;
 }
 
 .img-right {
-    float: right;
-}
-
-.heading {
-    text-align: left;
-    margin-left: 100px;
+    height: 500px;
+    width: 600px;
 }
