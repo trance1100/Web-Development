@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+.top{
+    height: 1000px;
+}
+.navigation-bar {
+    list-style-type: none;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+.navigation-item {
+    float: left;
+}
+
+.logo {
+    margin-right: 1400px;
+}
+
+.top {
+    background-image: url("/huddle-landing-page-945317-master/images/bg-hero-desktop.svg")
+}
+
+.img-right {
+    float: right;
+}
+
+.heading {
+    text-align: left;
+    margin-left: 100px;
+}
