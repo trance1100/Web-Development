@@ -7,28 +7,42 @@ $(document).one('keydown', function (event) {
 });
 
 function game_start() {
-
     var order = [];
-    var game  = true;
+
     $("#level-title").text("Level " + level.toString());
     order.push(chooseColor());
-    console.log(order)
 
-    for (var i = 0; i < order.length; i++) {
-        $(document).one('keydown', function(event) {
-            if (event.key === order[i]) {
-                game = true;
+}
+
+function clicked() {
+    var userChosenColor;
+    
+}
+function gameOver() {
+    $("body").addClass("game-over");
+    playSound("wrong");
+    setTimeout(function () {
+        $("#" + color).removeClass("pressed");
+    }, 100);
+}
+
+function loop(order) {
+    $(".btn").click(function (event) {
+        for (var i = 0; i < order.length; i++) {
+            if (event[i] === event.target.id) {
+                addOrder(order);
+                loop(order);
+            } else {
+                alert("Game over");
             }
-        });
-
-        if (game === true) {
-            order.push(chooseColor());
-            i;
-        } else {
-            alert("Lost!");
         }
-    }
+    })
+}
 
+function addOrder(order) {
+    level++;
+    $("#level-title").text("Level " + level.toString());
+    order.push(chooseColor());
 }
 
 function chooseColor() {
