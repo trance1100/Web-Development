@@ -3,9 +3,7 @@ var buttonColors = ['red', 'yellow', 'green', 'blue'];
 var randomChosenColor;
 var gamePattern = [];
 var userClickedPattern = [];
-
-randomChosenColor = buttonColors[randomNumber = Math.floor(Math.random() * 4)];
-gamePattern.push(randomChosenColor);
+var started = false;
 
 $(document).one('keydown', function (event) {
     if (event.key === 'a') {
@@ -13,6 +11,13 @@ $(document).one('keydown', function (event) {
 
     }
 });
+
+
+
+randomChosenColor = buttonColors[randomNumber = Math.floor(Math.random() * 4)];
+gamePattern.push(randomChosenColor);
+
+
 
 $('.btn').click(function (event) {
     var userChosenColor = event.target.id;
@@ -26,11 +31,11 @@ $('.btn').click(function (event) {
 })
 
 function checkAnswer(currentLevel) {
-    if(userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
+    if(userClickedPattern[currentLevel] === gamePattern[gamePattern.length - 1]) {
         console.log("Sucess");
-        if (gamePattern[currentLevel + 1] === undefined || gamePattern.length == 0) {
+        if (gamePattern[currentLevel + 1] === undefined) {
             setTimeout(function () {
-                gamePattern.push(nextSequence());
+                nextSequence();
                 userClickedPattern = [];
             }, 1000);
         }
