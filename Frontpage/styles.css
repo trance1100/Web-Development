@@ -2,7 +2,6 @@ body {
     background-color: #dde7f2;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    
 }
 
 h1 {
@@ -23,7 +22,7 @@ a:visited {
 #container {
     background-color: #b9bbdf;
     height: 500px;
-    width: 1100px;
+    width: 68.75rem;
     margin: 0 auto;
     border-style: solid;
 }
