@@ -2,7 +2,13 @@
 
 <h1>Compose</h1>
 <form action="" method="POST" class="compose">
-    <input type="text" name="composeItem" autocomplete="off" placeholder="Insert new message...">
-    <button type="submit" name="publish">Publish</button>
+    <div class="form-group">
+        <label>Title</label> <br>
+        <input type="text" name="postTitle" autocomplete="off" class="form-control"> <br>
+        <label>Post</label> <br>
+        <textarea name="postBody" rows="10" cols="30" class="form-control"></textarea> <br>
+    </div>
+    <button type="submit" name="publish" class="btn btn-primary">Publish</button>
+
 </form>
 <%- include("partials/footer") -%>
