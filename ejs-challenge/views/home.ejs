@@ -3,10 +3,12 @@
 <h1>Hello</h1>
 
 <p><%= homeContent %></p>
-
+<!-- truncate to 100 chaaracters -->
 <% posts.forEach(function(entries) {  %>
         <h1> <%= entries.postTitle %> </h1>
-        <p> <%= entries.postBody %> </p>
+        <p> <%= entries.postBody.substring(0, 100) + " ..." %> 
+        <a href=<%= "/posts/" + entries.postTitle %>>Read More</a>
+        </p>
 <% }); %>
 
 <%- include("partials/footer") -%>
