@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery and the Connections plugin -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.connections.js"></script>
+    <!-- Connect your elements like in this example -->
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('div').connections({
+                to: '#leaf'
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Your Family Tree</h1>
+
+    <h3>The Beginning</h3>
+    <div class="leaf">
+        <p>The Father</p>
+
+    </div>
+
+    <div class="leaf">
+        <p>The Mother</p>
+    </div>
+
+</body>
+
+</html>
